@@ -39,6 +39,7 @@ mod.loggadget = {
         box.setResizable(false, true, function()
         {
             div.scrollTop = div.scrollHeight;
+            div.style.height = box.rootNode.style.height;
         }, function()
         {
             mod.uiconfig.data.loggadget.height = box.rootNode.style.height;
@@ -48,10 +49,10 @@ mod.loggadget = {
         var table = document.createElement("table");
         var tbody = document.createElement("tbody");
         table.appendChild(tbody);
-        div.style.position = "absolute";
+        div.style.position = "relative";
         div.style.left = "0px";
         div.style.right = "0px";
-        div.style.height = "100%";
+        div.style.height = box.rootNode.style.height;
         div.style.overflow = "auto";
         div.allowSelect = true;
         div.allowDrag = true;

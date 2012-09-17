@@ -44,7 +44,7 @@ mod.statsgadget = {
             mod.uiconfig.update();
         });
         var div = document.createElement("div");
-        div.style.position = "absolute";
+        div.style.position = "relative";
         div.style.left = "0px";
         div.style.right = "0px";
         div.style.height = "100%";
